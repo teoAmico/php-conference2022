@@ -4,14 +4,22 @@ namespace Braddle\Celebration;
 class Person
 {
     private string $name;
+    private string $email;
 
-    public function __construct(string $name)
+    public function __construct(string $name, string $email)
     {
         $this->name = $name;
+        $this->email = $email;
     }
 
     public function getName(): string
     {
         return $this->name;
     }
+
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
 }
